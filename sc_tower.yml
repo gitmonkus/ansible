@@ -1,6 +1,7 @@
 ---
   - name: Steve P test switch
-  - hosts: 10.1.0.240
+    hosts: 10.1.0.240
+  
   - name: run multiple commands on remote nodes
     ios_command:
       commands:
