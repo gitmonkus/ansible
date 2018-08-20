@@ -1,4 +1,4 @@
-
+---
 - hosts: ios_devices
   gather_facts: no
   connection: local
@@ -11,8 +11,7 @@
     prompt: "Password"
     private: yes
 
-  tasks:
-
+tasks:
   - name: SYS | Define provider
     set_fact:
       provider:
@@ -28,3 +27,4 @@
     register: clock
 
   - debug: msg="{{ clock.stdout }}"
+...
