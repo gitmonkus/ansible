@@ -1,6 +1,6 @@
 ---
-  hosts: 
-  vars_prompt:
+  #hosts: 
+  #vars_prompt:
   tasks:
     - name: IOS | Show clock
       ios_command:
