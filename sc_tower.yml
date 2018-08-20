@@ -1,10 +1,8 @@
 ---
-  #- hosts: ios
-  #vars_prompt:
-  - tasks:
-      - name: IOS | Show clock
-        ios_command:
-        commands:
-          - show clock
-        register: clock
+  - name: run multiple commands on remote nodes
+    ios_command:
+      commands:
+        - show version
+        - show interfaces
+        - show clock
 ...
